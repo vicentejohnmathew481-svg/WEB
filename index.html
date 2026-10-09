@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John Mathew M. Vicente | About Me</title>
+<meta name="description" content="Personal portfolio of John Mathew M. Vicente, a 3rd year BS Computer Science student at North Eastern Mindanao State University - Lianga Campus.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">John Mathew M. Vicente</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tools" role="group" aria-label="Display settings">
+      <button type="button" id="smaller" aria-label="Decrease text size">A−</button>
+      <button type="button" id="larger" aria-label="Increase text size">A+</button>
+      <button type="button" id="theme" aria-pressed="false">Dark mode</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <div class="wrap">
+
+    <div class="hero" id="top">
+      <div>
+        <h1>Hi, I'm John Mathew M. Vicente.</h1>
+        <p class="lead">A BS Computer Science student</p>
+      </div>
+     <img class="portrait" src="photo.jpg" width="320" height="360">
+    </div>
+
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About me</h2>
+      <p>I'm John Mathew M. Vicente, a 3rd year BS Computer Science student at North Eastern Mindanao State University - Lianga Campus. I spend my days working, solving problems that I created myself, and learning how to build websites that are easy for everyone to use.</p>
+      <p>When I'm not coding, I like listening to music, playing games, and trying out new tech tools. I believe good technology should work for everyone, which is why I built this portfolio to follow web accessibility guidelines.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact me</h2>
+      <p>Email me at <a href="mailto:vicentejohnmathew481@gmail.com">vicentejohnmathew481@gmail.com</a>, or use the form below.</p>
+      <p>All fields are required.</p>
+      <div id="status" role="status" aria-live="polite" tabindex="-1"></div>
+      <form id="form" novalidate>
+        <div>
+          <label for="name">Your name</label>
+          <input id="name" type="text" autocomplete="name" required aria-describedby="name-e">
+          <p class="err" id="name-e"></p>
+        </div>
+        <div>
+          <label for="email">Email address <span class="hint">(example: name@email.com)</span></label>
+          <input id="email" type="email" autocomplete="email" required aria-describedby="email-e">
+          <p class="err" id="email-e"></p>
+        </div>
+        <div>
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="4" required aria-describedby="msg-e"></textarea>
+          <p class="err" id="msg-e"></p>
+        </div>
+        <div><button type="submit" class="primary">Send message</button></div>
+      </form>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 John Mathew M. Vicente. <a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
